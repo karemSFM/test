@@ -1,16 +1,25 @@
-# This is a sample Python script.
+import os
+import datetime
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+i=0
+# Chemin d'accès du dossier à créer
+new_directory_path = r'Bureau\lll'
+def concatin(a,b):
+    z=str(a)+str(b)
+    return(z)
 
+def path(x):
+    path="r"+str(x)
+    
+# Vérifier si le dossier existe déjà
+if not os.path.exists(new_directory_path):
+    # Créer le dossier
+    os.makedirs(new_directory_path)
+    print(f'Le dossier {new_directory_path} a été créé avec succès.')
+else:
+    heure_actuelle = str(datetime.datetime.now().time())
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print("PyCharm")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    chemin = r'Bureau\karem'+
+    with open(chemin, mode='w') as fichier:
+        pass
+    print(f'Le dossier {new_directory_path} existe déjà, il est recréé')
