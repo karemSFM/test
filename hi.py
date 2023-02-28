@@ -19,7 +19,7 @@ if not os.path.exists(new_directory_path):
 else:
     heure_actuelle = str(datetime.datetime.now().time())
 
-    chemin = r'Bureau\karem\ll.txt'
+    chemin = r'Bureau\lll\ll.txt'
     with open(chemin, mode='w') as fichier:
         pass
     print(f'Le dossier {new_directory_path} existe déjà, il est recréé')
