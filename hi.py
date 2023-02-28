@@ -3,7 +3,7 @@ import datetime
 
 i=0
 # Chemin d'accès du dossier à créer
-new_directory_path = r'Bureau\lll'
+"""new_directory_path = r'Bureau\lll'
 def concatin(a,b):
     z=str(a)+str(b)
     return(z)
@@ -22,4 +22,8 @@ else:
     chemin = r'Bureau\lll\ll.txt'
     with open(chemin, mode='w') as fichier:
         pass
-    print(f'Le dossier {new_directory_path} existe déjà, il est recréé')
+    print(f'Le dossier {new_directory_path} existe déjà, il est recréé')"""
+
+s = datetime.datetime.now()
+p=s.strftime("%Y-%m-%d %H:%M:%S")
+print(p)
